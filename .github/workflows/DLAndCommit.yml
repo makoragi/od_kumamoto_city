@@ -29,7 +29,7 @@ jobs:
 
       - name: Copy tennpohannbaigyou_list
         run: |
-          curl -o data/tennpohannbaigyou_list/org/tennpohannbaigyou_list.xlsx "https://www.city.kumamoto.jp/dynamic/opendata/pub/tennpohannbaigyou_list.xlsx.xlsx"
+          curl -o data/tennpohannbaigyou_list/org/tennpohannbaigyou_list.xlsx "https://www.city.kumamoto.jp/dynamic/opendata/pub/tennpohannbaigyou_list.xlsx"
           python script/xls2csv.py data/tennpohannbaigyou_list/org/tennpohannbaigyou_list.xlsx
 
       - name: Copy Insyokutenneigyoukyoka
